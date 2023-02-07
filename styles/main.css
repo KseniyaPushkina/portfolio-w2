@@ -1,0 +1,50 @@
+/*main*/
+@import 'normalize.css';
+@import 'variables.css';
+@import 'fonts.css';
+
+/*components*/
+@import '../components/header.css';
+@import '../components/hero.css';
+@import '../components/about.css';
+@import '../components/work.css';
+@import '../components/question.css';
+@import '../components/footer.css';
+
+/*other*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--white);
+}
+
+.container {
+  margin: auto;
+  padding: 0 75px;
+  max-width: 1920px;
+}
+
+.section-offset {
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 59px;
+}
+
+.--btn-default {
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 16px;
+  background-color: var(--orange);
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

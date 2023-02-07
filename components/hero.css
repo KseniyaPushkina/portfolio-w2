@@ -1,0 +1,116 @@
+.hero__container {
+  position: relative;
+  color: var(--white);
+  border-radius: 32px;
+  margin-top: 50px;
+  padding: 100px 80px;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper.hero__swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  background: var(--white);
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  transition: background-color .3s ease-in-out;
+}
+
+.swiper-pagination-bullet:focus {
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+}
+
+.hero__pagination.swiper-bullet-pagination {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.swiper-bullet-pagination.hero__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  gap: 20px;
+}
+
+.swiper-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slide-1 {
+  background-image: url('../img/hero-img-1.jpg');
+}
+
+.slide-2 {
+  background-image: url('../img/hero-img-2.jpg');
+}
+
+.slide-3 {
+  background-image: url('../img/hero-img-3.jpg');
+}
+
+.hero__title {
+  max-width: 837px;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 85px;
+}
+
+.hero__descr {
+  margin-top: 24px;
+  max-width: 790px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.hero__btn {
+  position: relative;
+  font-size: 23px;
+  line-height: 28px;
+  margin-top: 90px;
+  padding: 25px 39px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero__btn:hover {
+  background-color: var(--orange-hover);
+}
+
+.hero__btn:focus {
+  outline: none;
+  background-color: var(--orange-hover);
+  opacity: 1;
+}
+
+.hero__btn:active {
+  background-color: var(--orange-active);
+}
